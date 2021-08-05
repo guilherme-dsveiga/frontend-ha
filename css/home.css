@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+:root{
+        --primary-light: #c87550;
+        --primary-dark: #6d4738;
+        --neutral-light: rgb(246,246,246);
+        --neutral-medium: rgb(226,226,226);
+        --neutral-dark: rgb(104,104,104);
+        --accent-green: rgb(170,208,74);
+}
+
+*,
+*::after,
+*::before{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+}
+
+.items-spacing{
+        margin-bottom: 2rem;
+}
+
+header{
+       height: 18vh;
+}
+
+nav,
+.icon,
+.icon img{
+        height: 100%;
+}
+
+nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1rem;
+}
+
+.icon{
+        padding-left: 10rem;
+}
+
+.flex-nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 10rem;
+}
+
+.nav-item{
+        display: inline;
+        padding-inline: 1em;
+        font-size: 24px;
+        border-right: 3px solid var(--primary-light);
+        line-height: 95%;
+        color: var(--primary-dark);
+        font-weight: 700;
+}
+
+.nav-item:last-child{
+        border-right: none;
+}
+
+.img-container{
+        background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 0, 0, 0) 12%) , url("../assets/home-background.jpg");
+        height: 80vh;
+        background-position: center;
+        background-size: cover;
+}
+
+.cross-section{
+        margin-top: -50px;
+}
+
+.triangle{
+        width: 100%;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 50px 80vw;
+        border-color: transparent transparent var(--primary-light) transparent;
+}
+
+.rectangle{
+        width: 100%;
+        height: 125px;
+        background-color: var(--primary-light);        
+}
+
+.flex-column{
+        display: flex;
+        flex-direction: column;
+}
+
+.flex-row{
+        display: flex;
+        flex-direction: row;
+}
+
+.find-property{
+        background-color: var(--neutral-light);
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 3rem 0;
+}
+
+.find-property > h4{
+        font-size: 32px;
+        color: var(--neutral-dark);
+        font-weight: 300;
+        padding: 1rem 0 2rem 0;
+}
+
+.flex-list{
+        width: 100%;
+}
+
+.flex-item{
+        padding: 3rem;
+        border-right: 3px solid var(--neutral-medium);
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.flex-item:last-child{
+        border-right: none;
+}
+
+.flex-item span{
+        font-size: 28px;
+        font-weight: 300;
+        color: var(--accent-green);
+        padding-block: 1.5rem;
+}
+
+h2{
+        font-size: 115px;
+        color: rgb(223 142 81);
+        font-weight: 900;
+        padding-block: 3rem ;
+}
+
+.services{
+        justify-content: center;
+        align-items: center;
+        padding-inline: 5rem;
+}
+
+.flex-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+}
+
+.circle-img{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        border-radius: 50%;
+        box-shadow: 0px 0px 35px -1px rgba(115,115,115,1);
+}
+
+#construction{
+        background-image: url(../assets/construction.jpg);
+        background-position: center;
+        background-size: cover;
+}
+
+#investment{
+        background-image: url(../assets/investment.jpg);
+        background-position: center;
+        background-size: cover;
+}
+
+#renovation{
+        background-image: url(../assets/renovation.png);
+        background-position: center;
+        background-size: cover;
+}
+
+
+.service-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+        padding: 3rem 5rem;
+        width: 100%;
+        
+}
+
+.service-item span{
+        font-size: 52px;
+        margin-block: 2rem;
+        color: var(--primary-dark);
+        font-weight: 900;
+}
+
+
