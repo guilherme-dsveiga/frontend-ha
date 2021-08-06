@@ -2,7 +2,8 @@
 
 :root{
         --primary-light: #c87550;
-        --primary-dark: #6d4738;
+        --primary-dark: rgb(109 72 56);
+        --primary-neutral: rgb(223 142 81);
         --neutral-light: rgb(246,246,246);
         --neutral-medium: rgb(226,226,226);
         --neutral-dark: rgb(104,104,104);
@@ -65,7 +66,7 @@ nav{
 }
 
 .img-container{
-        background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 0, 0, 0) 12%) , url("../assets/home-background.jpg");
+        background-image:linear-gradient(rgb(255, 255, 255), rgba(255, 0, 0, 0) 12%), url("../assets/home-background.jpg");
         height: 80vh;
         background-position: center;
         background-size: cover;
@@ -203,4 +204,220 @@ h2{
         font-weight: 900;
 }
 
+.about-us{
+        padding: 1rem 0;
+        justify-content: space-evenly;
+        align-items: center;
+}
 
+.about-text-container{
+        font-size: 24px;
+        line-height: 120%;
+        color: var(--neutral-dark);
+        font-weight: 400;
+}
+
+.about-text-container p{
+        padding-bottom: 2rem;
+}
+
+.about-text-container span{
+        font-weight: 700;
+}
+
+.about-img-container img{
+        width: 100%;
+}
+
+.medium-button{
+        background-color: var(--primary-neutral);
+        margin-right: auto;
+        padding: .8rem 3rem;
+        border-radius: 1.5rem;
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 300;
+}
+
+.portifolio{
+        align-items: center;
+}
+
+.portifolio h2{
+        padding: 3rem 0 0 0 ;
+        line-height: 120%;
+}
+
+.portifolio p{
+        font-size: 32px;
+        color: var(--neutral-dark);
+        font-weight: 300;
+        line-height: 100%;
+}
+
+.pictures-grid{
+        display: grid;
+        grid-template-columns: repeat(1fr, 3) ;
+        grid-template-rows: repeat(200px, 4);
+        grid-template-areas: 
+        "picture-1 picture-1 picture-2"
+        "picture-1 picture-1 picture-3"
+        "picture-4 picture-6 picture-6"
+        "picture-5 picture-6 picture-6";
+        padding: 3rem 10rem;
+        row-gap: 2rem;
+        column-gap: 2rem;
+}
+
+#picture-1{
+        grid-area: picture-1;
+}
+
+
+#picture-2{
+        grid-area: picture-2;
+}
+
+#picture-3{
+        grid-area: picture-3;
+}
+
+#picture-4{
+        grid-area: picture-4;
+}
+
+#picture-5{
+        grid-area: picture-5;
+}
+
+#picture-6{
+        grid-area: picture-6;
+}
+
+.picture-shadow img{
+        width: 100%;
+        height: 100%;
+}
+
+.large-button{
+        background-color: var(--primary-neutral);
+        padding: .8rem 5rem;
+        border-radius: 2rem;
+        color: white;
+        text-decoration: none;
+        font-size: 36px;
+        font-weight: 300;
+}
+
+
+.social-actions{
+        background-color: var(--primary-neutral);
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+        padding-block: 10rem;
+        position: relative;
+}
+
+.picture-collage-container img{
+        width: 100%;
+        flex-basis: 100%;
+        padding-right: 5rem;
+}
+
+.social-action-text{
+        padding-right: 8rem;
+}       
+
+.social-action-text h3{
+        color: white;
+        font-size: 81px;
+        font-weight: 900;
+        line-height: 100%;
+}
+
+.social-action-text p{
+        padding-top: 1rem;
+        color: white;
+        font-size: 36px;
+}
+
+.social-action-text span{
+        font-weight: 700;
+}
+
+.wave-container{
+        position: relative;  
+}
+
+.wave-container img{
+        width: 100%;
+        position: absolute;
+        top: -500px;
+        z-index: -1;
+}
+
+footer{
+        padding: 2rem 5rem;
+        height: 28vh;
+        justify-content: space-around;
+        align-items: center;
+}
+
+.logo-container{
+        height: 100%;
+        padding: 0 3rem;
+}
+
+.logo-container img{
+        height: 100%;
+}
+
+.contact-container{
+        padding: 1rem 3rem;
+}
+
+.contact-container p{
+        padding-top: .5rem;
+        color: var(--neutral-dark);
+        font-size: 24px;
+        font-weight: 600;
+}
+
+.telephone-container span {
+        color: var(--primary-dark);
+        font-size: 32px;
+        font-weight: 600;
+}
+
+#telephone-svg{
+        display: flex;
+        align-items: center;
+        padding-right: .5rem;
+}
+
+.urls-container{
+        background-color: var(--neutral-medium);
+        border-radius: 1rem;
+        padding: 3rem 3rem;
+}
+
+.urls-container span{
+        padding-top: .5rem;
+        color: var(--primary-dark);
+        font-size: 24px;
+        font-weight: 600;
+}
+
+#mail-svg{
+        display: flex;
+        align-items: center;
+        padding-right: .5rem;
+}
+
+#house-svg{
+        display: flex;
+        align-items: center;
+        padding-right: .5rem;
+}
