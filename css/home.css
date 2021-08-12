@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@font-face{
+        font-family: 'Metropolis';
+        src: url('../font/Metropolis-Medium.woff') format('woff');
+}
+
+@font-face{
+        font-family: 'Metropolis';
+        font-weight: 600;
+        src: url('../font/Metropolis-Bold.woff') format('woff');
+}
+
+@font-face{
+        font-family: 'Metropolis';
+        font-weight: 900;
+        src: url('../font/Metropolis-Black.woff') format('woff');
+}
 
 :root{
         --primary-light: #c87550;
@@ -7,6 +22,7 @@
         --neutral-light: rgb(246,246,246);
         --neutral-medium: rgb(226,226,226);
         --neutral-dark: rgb(104,104,104);
+        --neutral-darkest: rgb(83 83 83);
         --accent-green: rgb(170,208,74);
 }
 
@@ -16,11 +32,11 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Metropolis', sans-serif;
 }
 
 .items-spacing{
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
 }
 
 header{
@@ -59,6 +75,15 @@ nav{
         line-height: 95%;
         color: var(--primary-dark);
         font-weight: 700;
+}
+
+.nav-item a{
+        text-decoration: none;
+        color: var(--primary-dark);
+}
+
+.nav-item a:hover{
+        color: var(--primary-dark);
 }
 
 .nav-item:last-child{
@@ -153,9 +178,9 @@ h2{
 }
 
 .flex-container{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 5rem;
 }
 
 .circle-img{
@@ -170,7 +195,7 @@ h2{
 #construction{
         background-image: url(../assets/construction.jpg);
         background-position: center;
-        background-size: cover;
+        background-size: auto;
 }
 
 #investment{
@@ -190,11 +215,7 @@ h2{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        flex-basis: 100%;
-        padding: 3rem 5rem;
-        width: 100%;
-        
+        align-items: center;       
 }
 
 .service-item span{
