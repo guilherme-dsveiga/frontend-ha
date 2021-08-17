@@ -36,11 +36,11 @@
 }
 
 .items-spacing{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
 }
 
 header{
-       height: 18vh;
+       height: 15vh;
 }
 
 nav,
@@ -52,29 +52,29 @@ nav,
 nav{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        margin-top: 1rem;
+        justify-content: space-evenly;
+        margin-inline: 20px;
+        margin-block: 10px;
 }
 
 .icon{
-        padding-left: 10rem;
+        height: 100%;
 }
 
 .flex-nav{
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding-right: 10rem;
 }
 
 .nav-item{
         display: inline;
-        padding-inline: 1em;
-        font-size: 24px;
+        padding-inline: 15px;
+        font-size: 18px;
         border-right: 3px solid var(--primary-light);
         line-height: 95%;
         color: var(--primary-dark);
-        font-weight: 700;
+        font-weight: 600;
 }
 
 .nav-item a{
@@ -133,7 +133,7 @@ nav{
 }
 
 .find-property > h4{
-        font-size: 32px;
+        font-size: 24px;
         color: var(--neutral-dark);
         font-weight: 300;
         padding: 1rem 0 2rem 0;
@@ -144,7 +144,7 @@ nav{
 }
 
 .flex-item{
-        padding: 3rem;
+        padding-block: 2rem;
         border-right: 3px solid var(--neutral-medium);
         flex-basis: 100%;
         display: flex;
@@ -158,14 +158,14 @@ nav{
 }
 
 .flex-item span{
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 300;
         color: var(--accent-green);
         padding-block: 1.5rem;
 }
 
 h2{
-        font-size: 115px;
+        font-size: 56px;
         color: rgb(223 142 81);
         font-weight: 900;
         padding-block: 3rem ;
@@ -174,13 +174,10 @@ h2{
 .services{
         justify-content: center;
         align-items: center;
-        padding-inline: 5rem;
 }
 
 .flex-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 5rem;
+        margin-block: 2rem;
 }
 
 .circle-img{
@@ -192,34 +189,21 @@ h2{
         box-shadow: 0px 0px 35px -1px rgba(115,115,115,1);
 }
 
-#construction{
-        background-image: url(../assets/construction.jpg);
-        background-position: center;
-        background-size: auto;
-}
-
-#investment{
-        background-image: url(../assets/investment.jpg);
-        background-position: center;
-        background-size: cover;
-}
-
-#renovation{
-        background-image: url(../assets/renovation.png);
-        background-position: center;
-        background-size: cover;
-}
-
-
 .service-item{
         display: flex;
         flex-direction: column;
+        margin-inline: 2rem;
         justify-content: center;
-        align-items: center;       
+        align-items: center;
+}
+
+.service-item img{
+        height: 350px;
+        width: 350px;
 }
 
 .service-item span{
-        font-size: 52px;
+        font-size: 28px;
         margin-block: 2rem;
         color: var(--primary-dark);
         font-weight: 900;
@@ -232,7 +216,7 @@ h2{
 }
 
 .about-text-container{
-        font-size: 24px;
+        font-size: 20px;
         line-height: 120%;
         color: var(--neutral-dark);
         font-weight: 400;
@@ -246,6 +230,10 @@ h2{
         font-weight: 700;
 }
 
+.about-img-container{
+        max-width: 500px;
+}
+
 .about-img-container img{
         width: 100%;
 }
@@ -257,7 +245,7 @@ h2{
         border-radius: 1.5rem;
         color: white;
         text-decoration: none;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 300;
 }
 
@@ -271,7 +259,7 @@ h2{
 }
 
 .portifolio p{
-        font-size: 32px;
+        font-size: 24px;
         color: var(--neutral-dark);
         font-weight: 300;
         line-height: 100%;
@@ -323,37 +311,36 @@ h2{
 
 .large-button{
         background-color: var(--primary-neutral);
-        padding: .8rem 5rem;
+        padding: .8rem 3rem;
         border-radius: 2rem;
         color: white;
         text-decoration: none;
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 300;
 }
 
-
 .social-actions{
         background-color: var(--primary-neutral);
-        justify-content: center;
-        align-items: center;
-        margin-top: 8rem;
-        padding-block: 10rem;
-        position: relative;
+}
+
+.picture-collage-container{
+       width: inherit;
 }
 
 .picture-collage-container img{
         width: 100%;
-        flex-basis: 100%;
-        padding-right: 5rem;
 }
 
-.social-action-text{
-        padding-right: 8rem;
-}       
+.block-padding{
+        padding-bottom: 3rem;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
 
 .social-action-text h3{
         color: white;
-        font-size: 81px;
+        font-size: 48px;
         font-weight: 900;
         line-height: 100%;
 }
@@ -361,29 +348,20 @@ h2{
 .social-action-text p{
         padding-top: 1rem;
         color: white;
-        font-size: 36px;
+        font-size: 24px;
 }
 
 .social-action-text span{
         font-weight: 700;
 }
 
-.wave-container{
-        position: relative;  
-}
 
-.wave-container img{
-        width: 100%;
-        position: absolute;
-        top: -500px;
-        z-index: -1;
-}
 
 footer{
-        padding: 2rem 5rem;
-        height: 28vh;
-        justify-content: space-around;
+        height: 20vh;
+        justify-content: space-evenly;
         align-items: center;
+        margin-bottom: 2rem;
 }
 
 .logo-container{
@@ -402,13 +380,13 @@ footer{
 .contact-container p{
         padding-top: .5rem;
         color: var(--neutral-dark);
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 600;
 }
 
 .telephone-container span {
         color: var(--primary-dark);
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 600;
 }
 
@@ -427,8 +405,16 @@ footer{
 .urls-container span{
         padding-top: .5rem;
         color: var(--primary-dark);
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 600;
+}
+
+.site-container{
+       align-items: center;
+}
+
+.email-container{
+       align-items: center;
 }
 
 #mail-svg{
