@@ -323,24 +323,37 @@ h2{
         background-color: var(--primary-neutral);
 }
 
-.picture-collage-container{
-       width: inherit;
-}
-
-.picture-collage-container img{
-        width: 100%;
+.flex-align-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .block-padding{
         padding-bottom: 3rem;
-        justify-content: space-evenly;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 350px;
+        grid-column-gap: 5rem;
+        height: 65vh;
 }
 
+.social-img-container{
+        width: 100%;
+}
+
+.social-img-container img{
+        width: 100%;
+}
+
+.social-action-text{
+        width: 100%;
+        align-self: center;
+}
 
 .social-action-text h3{
         color: white;
-        font-size: 48px;
+        font-size: 36px;
         font-weight: 900;
         line-height: 100%;
 }
@@ -348,7 +361,7 @@ h2{
 .social-action-text p{
         padding-top: 1rem;
         color: white;
-        font-size: 24px;
+        font-size: 20px;
 }
 
 .social-action-text span{
