@@ -41,6 +41,7 @@
 
 header{
        height: 15vh;
+       margin-block: 1rem;
 }
 
 nav,
@@ -145,12 +146,14 @@ nav{
 
 .flex-item{
         padding-block: 2rem;
+        padding-inline: 2rem;
         border-right: 3px solid var(--neutral-medium);
         flex-basis: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 }
 
 .flex-item:last-child{
@@ -210,7 +213,7 @@ h2{
 }
 
 .about-us{
-        padding: 1rem 0;
+        padding: 1rem 2rem;
         justify-content: space-evenly;
         align-items: center;
 }
@@ -224,6 +227,7 @@ h2{
 
 .about-text-container p{
         padding-bottom: 2rem;
+        font-size: 18px;
 }
 
 .about-text-container span{
@@ -241,11 +245,11 @@ h2{
 .medium-button{
         background-color: var(--primary-neutral);
         margin-right: auto;
-        padding: .8rem 3rem;
+        padding: .5rem 2rem;
         border-radius: 1.5rem;
         color: white;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
 }
 
@@ -321,12 +325,14 @@ h2{
 
 .social-actions{
         background-color: var(--primary-neutral);
+        padding-bottom: 2rem;
 }
 
 .flex-align-container{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
+        margin-inline: 5rem;
 }
 
 .block-padding{
@@ -338,17 +344,8 @@ h2{
         height: 65vh;
 }
 
-.social-img-container{
-        width: 100%;
-}
-
 .social-img-container img{
         width: 100%;
-}
-
-.social-action-text{
-        width: 100%;
-        align-self: center;
 }
 
 .social-action-text h3{
@@ -412,7 +409,7 @@ footer{
 .urls-container{
         background-color: var(--neutral-medium);
         border-radius: 1rem;
-        padding: 3rem 3rem;
+        padding: 1rem;
 }
 
 .urls-container span{
@@ -440,4 +437,27 @@ footer{
         display: flex;
         align-items: center;
         padding-right: .5rem;
+}
+
+
+@media only screen and (max-width: 1300px){
+        .service-item img{
+                height: 300px;
+                width: 300px;
+        }
+
+        .about-img-container{
+                max-width: 400px;
+        }
+}
+
+@media only screen and (max-width: 1150px){
+        .service-item img{
+                height: 200px;
+                width: 200px;
+        }
+
+        .about-img-container{
+                max-width: 350px;
+        }
 }
