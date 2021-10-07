@@ -8,10 +8,6 @@
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/about.css">
         <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="css/responsive-css/home-responsive.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-                crossorigin="anonymous">
         <link rel="shortcut icon" href="assets/favicon.png" />
         <title>Sobre Nós - HA Construções</title>
 </head>
@@ -29,8 +25,31 @@
                                 <div class="nav-item"><a href="#">PORTFÓLIO</a></div>
                                 <div class="nav-item"><a href="#">PROJETOS SOCIAIS</a></div>
                                 <div class="nav-item"><a href="contact.html">FALE CONOSCO</a></div>
+                                <div class="menu-burger">
+                                        <a id="menu" onclick="openMenu()"><img src="assets/menu.svg" alt=""></a>
+                                </div>
                         </div>
                 </nav>
+                <div class="menu-block" id="block">
+                        <div class="menu-item">
+                                <a class="nav-link super" onclick="closeMenu()">X</a>
+                        </div>
+                        <div class="menu-item">
+                                <a class="nav-link active " href="./about.html">Sobre o Grupo</a>
+                        </div>
+                        <div class="menu-item">
+                                <a class="nav-link " href="./services.html">Serviços</a>
+                        </div>
+                        <div class="menu-item">
+                                <a class="nav-link " href="#">Portifólio</a>
+                        </div>
+                        <div class="menu-item">
+                                <a class="nav-link " href="#">Projetos Sociais</a>
+                        </div>
+                        <div class="menu-item">
+                                <a class="nav-link " href="./contact.html">Fale Conosco</a>
+                        </div>
+                </div>
         </header>
         <div class="container">
                 <div class="col mt-5">
@@ -118,10 +137,17 @@
                         </div>
                 </div>
         </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                crossorigin="anonymous"></script>
+        <div class="developed-by">
+                <p>© 2021 - Ratna Contabilidade. Desenvolvido por <img src="./assets/logo-jobs.png" alt="" srcset="">
+                </p>
+                <p>Este site é protegido pelo <a style="color: var(--main-darkgold);text-decoration: none;"
+                                href="https://policies.google.com/privacy">reCAPTCHA</a> e a Política de Privacidade e
+                        os <a style="color: var(--main-darkgold);text-decoration: none;"" href="
+                                https://policies.google.com/terms">Termos de Serviços</a> do Google se aplicam.
+                </p>
+        </div> 
+        
+        <script src="./scripts/menu.js"></script>
 </body>
 
 </html>

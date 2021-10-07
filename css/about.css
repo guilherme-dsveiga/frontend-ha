@@ -24,9 +24,29 @@
         font-family: 'Metropolis', sans-serif;
 }
 
+.container{
+        padding-inline: 2rem;
+}
+
+.w-100{
+        width: 100%;
+        margin-block: 20px;
+}
+
 .arrow-text-container{
         display: flex;
         flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+}
+
+p{
+        margin-bottom: 20px;
+}
+
+ul{
+        margin-bottom: 20px;
+        margin-left: 1rem;
 }
 
 h1{
@@ -51,4 +71,10 @@ li{
 
 span{
         font-weight: 600;
+}
+
+@media only screen and (max-width: 1023px) {
+        .container{
+                padding-inline: 20px;
+        }
 }
