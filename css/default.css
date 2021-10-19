@@ -13,3 +13,28 @@
         border-left: 1.5rem solid #df8e51;
 }
 
+.right-arrow-brown{
+        width: 0;
+        height: 0;
+        border-top: 1.5rem solid transparent;
+        border-bottom: 1.5rem solid transparent;
+        border-left: 1.5rem solid rgb(109 72 56);
+}
+
+.small-right-arrow{
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #df8e51;
+        padding-right: 5px;
+}
+
+.small-right-arrow-brown{
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid rgb(109 72 56);
+        padding-right: 5px;
+}
