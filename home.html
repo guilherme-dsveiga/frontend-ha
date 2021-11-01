@@ -8,6 +8,7 @@
         <title>Home - HA Construções</title>
         <link rel="stylesheet" href="css/home.css">
         <link rel="shortcut icon" href="assets/favicon.png" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 </head>
 
 <body>
@@ -15,14 +16,14 @@
                 <header>
                         <nav>
                                 <div class="icon">
-                                        <a href="home.html"><img src="assets/ha-logo.png"
+                                        <a href="home"><img src="assets/ha-logo.png"
                                                         alt="Logo da empresa HA Construções"></a>
                                 </div>
                                 <div class="flex-nav">
-                                        <div class="nav-item"><a href="about.html">SOBRE O GRUPO</a></div>
-                                        <div class="nav-item"><a href="services.html">SERVIÇOS</a></div>
+                                        <div class="nav-item"><a href="about">SOBRE O GRUPO</a></div>
+                                        <div class="nav-item"><a href="services">SERVIÇOS</a></div>
                                         <div class="nav-item"><a href="#">PROJETOS SOCIAIS</a></div>
-                                        <div class="nav-item"><a href="contact.html">FALE CONOSCO</a></div>
+                                        <div class="nav-item"><a href="contact">FALE CONOSCO</a></div>
                                         <div class="menu-burger">
                                                 <a id="menu" onclick="openMenu()"><img src="assets/menu.svg" alt=""></a>
                                         </div>
@@ -33,65 +34,47 @@
                                         <a class="nav-link super" onclick="closeMenu()">X</a>
                                 </div>
                                 <div class="menu-item">
-                                        <a class="nav-link active " href="./about.html">Sobre o Grupo</a>
+                                        <a class="nav-link active " href="./about">Sobre o Grupo</a>
                                 </div>
                                 <div class="menu-item">
-                                        <a class="nav-link " href="./services.html">Serviços</a>
+                                        <a class="nav-link " href="./services">Serviços</a>
                                 </div>
                                 <div class="menu-item">
                                         <a class="nav-link " href="#">Projetos Sociais</a>
                                 </div>
                                 <div class="menu-item">
-                                        <a class="nav-link " href="./contact.html">Fale Conosco</a>
+                                        <a class="nav-link " href="./contact">Fale Conosco</a>
                                 </div>
                         </div>
                 </header>
                 <div class="img-container">
-                        <div class="img-crop-accent" ></div>
+                        <div class="img-crop-accent"></div>
                 </div>
                 <div class="cross-section items-spacing">
                         <div class="triangle"></div>
                         <div class="rectangle"></div>
                 </div>
-                <section class="flex-column find-property items-spacing">
-                        <h4>ENCONTRE O SEU IMÓVEL</h4>
-                        <div class="flex-row flex-list">
-                                <div class="flex-item">
-                                        <div class="key-icon"><img src="assets/outline-key.png"
-                                                        alt="Contorno de uma chave"></div>
-                                        <span>BREVE LANÇAMENTOS</span>
-                                </div>
-                                <div class="flex-item">
-                                        <div class="key-icon"><img src="assets/empty-key.png" alt="Chave sem cor"></div>
-                                        <span>LANÇAMENTOS</span>
-                                </div>
-                                <div class="flex-item">
-                                        <div class="key-icon"><img src="assets/half-key.png"
-                                                        alt="Chave pintada de verde até a metade"></div>
-                                        <span>EM OBRAS</span>
-                                </div>
-                                <div class="flex-item">
-                                        <div class="key-icon"><img src="assets/full-key.png"
-                                                        alt="Chave pintada totalmente de verde"></div>
-                                        <span>PRONTOS PARA MORAR</span>
-                                </div>
-                        </div>
-                </section>
                 <section class="flex-column items-spacing services ">
                         <h2>SERVIÇOS</h2>
                         <div class="flex-row flex-container">
-                                <div class="service-item">
-                                        <img src="assets/construction.jpg" alt="">
-                                        <span>Construções</span>
-                                </div>
-                                <div class="service-item">
-                                        <img src="assets/investment.jpg" alt="">
-                                        <span>Investimentos</span>
-                                </div>
-                                <div class="service-item">
-                                        <img src="assets/renovation.jpg" alt="">
-                                        <span>Reformas</span>
-                                </div>
+                                <a href="services">
+                                        <div class="service-item">
+                                                <img src="assets/construction.jpg" alt="">
+                                                <span>Construções</span>
+                                        </div>
+                                </a>
+                                <a href="services">
+                                        <div class="service-item">
+                                                <img src="assets/investment.jpg" alt="">
+                                                <span>Investimentos</span>
+                                        </div>
+                                </a>
+                                <a href="services">
+                                        <div class="service-item">
+                                                <img src="assets/renovation.jpg" alt="">
+                                                <span>Reformas</span>
+                                        </div>
+                                </a>
                         </div>
                 </section>
                 <section class="flex-row about-us items-spacing">
@@ -104,7 +87,7 @@
                                         filhos do construtor Ricardo Raposo<br> que junto com sua eposa, Viviane, formam
                                         o coração do<br> Grupo H.A. Somos uma família construindo o sonho de outras<br>
                                         famílias porque para nós, o lar é um ambiente sagrado.</p>
-                                <a href="#" class="medium-button">VER MAIS</a>
+                                <a href="about" class="medium-button">VER MAIS</a>
                         </div>
                 </section>
                 <!--<section class="flex-column portifolio items-spacing">
@@ -130,7 +113,7 @@
                         <img src="assets/wave.png" draggable="false" alt="">
                         <div class="flex-align-container">
                                 <div class="social-img-container">
-                                        <img src="assets/social-action-container.png"  draggable="false" alt="">
+                                        <img src="assets/social-action-container.png" draggable="false" alt="">
                                 </div>
                                 <div class="social-action-text">
                                         <h3>AÇÕES SOCIAIS</h3>
@@ -149,9 +132,7 @@
                                         <div id="telephone-svg"><img src="assets/telephone.png" alt=""></div>
                                         <span>(13) 4104-4001</span>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consec-<br>tetur adipisicing elit, sed do eiusmod<br>
-                                        pendisse
-                                        ultrices gravida.</p>
+                                <p>Entre em contato sem compromisso</p>
                         </div>
                         <div class="urls-container flex-column">
                                 <div class="email-container flex-row">

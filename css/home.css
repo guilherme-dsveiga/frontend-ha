@@ -468,6 +468,10 @@ footer {
         width:15%
 }
 
+a{
+        text-decoration: none;
+}
+
 
 @media only screen and (max-width: 1300px) {
         .service-item img {
@@ -510,17 +514,17 @@ footer {
         .menu-block {
                 display: none;
                 position: absolute;
-                top: 2%;
+                top: 0;
                 right: 0;
+                height: 100vh;
+                padding: 20px;
                 background-color: var(--main-black);
                 z-index: 9999;
-                transition: all ease 2s;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 flex-direction: column;
-                background: #fff;
-                border-radius: 10px;
-                box-shadow: 10px 10px 25px -6px rgba(0, 0, 0, 0.75);
+                background: var(--primary-light);
+                color: white;
         }
 
         .menu-block a {
@@ -529,6 +533,7 @@ footer {
                 color: var(--main-white);
                 text-decoration: none;
                 transition: all ease .2s;
+                cursor: pointer;
         }
 
         .menu-block a:hover {
@@ -576,8 +581,10 @@ footer {
                 align-items: center;
         }
 
+        
+
         .about-img-container {
-                margin-bottom: 20px;
+                margin-bottom: 50px;
         }
 
         .pictures-grid {
