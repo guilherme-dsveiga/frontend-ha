@@ -1,0 +1,37 @@
+.banner-img {
+        min-height: 400px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+        position: relative;
+}
+
+.banner-img>p {
+        font-size: 2rem;
+        color: white;
+        margin: 1rem 1rem 1rem 3rem;
+        font-weight: 600;
+}
+
+article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 calc(375px + 3rem) 0 3rem;
+        margin-bottom: 1rem;
+}
+
+.img-box>img {
+        width: 100%;
+}
+
+.img-box {
+        position: absolute;
+        max-width: 350px;
+        padding: 10px;
+        background-color: white;
+        bottom: -50%;
+        right: 3rem;
+}
